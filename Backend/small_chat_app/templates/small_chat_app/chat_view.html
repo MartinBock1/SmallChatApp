@@ -1,0 +1,17 @@
+{% extends "small_chat_app/base.html" %}
+
+{% block title %}
+    Chat
+{% endblock %}
+
+{% block content %} 
+    <h2>Das ist eine Chatliste: </h2>
+        {% for chat in chats %}
+            <ul>
+                <li>
+                    {{ chat.name }} - {{ chat.created_at }} <br>
+                    {{ chat.message }}
+                </li>
+            </ul>
+        {% endfor %}    
+{% endblock %}
