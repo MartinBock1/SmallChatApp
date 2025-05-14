@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Chat App</title>
-</head>
-<body>
-    <h1>Chat App</h1>
-    <ul id="chat-list">
+  </head>
+  <body>
+    <main class="maxContent">
+      <div class="inputbox">
+        <h1>Chat App</h1>
+        <div class="chat_name">
+          <label>Name:</label>
+          <input
+            type="text"
+            id="chat_name"
+            placeholder="...please insert your name"
+            required
+          />
+        </div>
+        <div class="chat_content">
+          <label>Message:</label>
+          <textarea
+            type="text"
+            id="chat_content"
+            placeholder="...please insert your message"
+            rows="4" 
+            cols="50"
+            required
+          ></textarea>
+        </div>
+        <button onclick="addNote()">senden</button>
+      </div>
+      <ul id="chat-list">
         <!-- JavaScript fügt hier <li> Elemente ein -->
-    </ul>
-</body>
-<script src="script.js"></script>
+      </ul>
+    </main>
+  </body>
+  <script src="script.js"></script>
 </html>

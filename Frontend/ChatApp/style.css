@@ -1,0 +1,71 @@
+/*=========================================================================
+    Globals
+=========================================================================*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ 
+ body {
+    color: black;
+ }
+ 
+ .maxContent {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ 
+ .container {
+    height: 100%;
+ }
+ 
+ h1 {
+    font-size: 32px;
+    padding-bottom: 10px;
+ }
+ 
+ h2 {
+    font-size: 24px;
+    padding-bottom: 5px;
+ }
+ 
+ .d_none {
+    display: none;
+ }
+
+ main {
+    min-height: calc(100vh - 100px);
+ }
+
+ .inputbox {
+    width: 400px;
+    padding: 16px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;    
+ }
+
+ label {
+    width: 76px;
+ }
+
+ .chat_name, .chat_content {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px
+ }
+
+ p {
+   /* border: 1px solid; */
+   padding: 20px 20px;
+   margin-bottom: 20px;
+   background-color: lightgrey;
+   width: 500px;
+   border-radius: 10px;
+ }
